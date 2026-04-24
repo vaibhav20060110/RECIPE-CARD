@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food recipes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>DishDash <span>Recipes</span></h1>
+
+        <!-- SEARCH -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search 100+ dishes..."
+                onkeyup="searchRecipes()"   <!-- 🔥 FIXED -->
+            >
+        </div>
+
+        <!-- CATEGORY BUTTONS -->
+        <nav class="categories">
+            <button class="filter-btn active" data-category="All">All</button>
+            <button class="filter-btn" data-category="Pizza">Pizza</button>
+            <button class="filter-btn" data-category="Burger">Burger</button>
+            <button class="filter-btn" data-category="Pasta">Pasta</button>
+            <button class="filter-btn" data-category="Beverages">Beverages</button>
+            <button class="filter-btn" data-category="Chinese">Chinese</button>
+        </nav>
+    </header>
+
+   <!-- RECIPE GRID -->
+<main id="recipe-grid"></main>
+
+<!-- ===== TEAM SECTION ===== -->
+<section class="team-section">
+    <h2>👨‍💻 Our Team</h2>
+
+<!-- 👑 LEADER -->
+<div class="leader">
+    <div class="team-card leader-card">
+        <img src="images/vaibhav.jpg" alt="Vaibhav Rawat">
+        <h3>Vaibhav Rawat</h3>
+        <p>Roll No: 250101160</p>
+        <span>👨‍💻 Team Leader | HTML Developer | JavaScript Developer</span>
+
+        <!-- 🔗 SOCIAL LINKS -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/vaibhav-rawat-73b9bb36a" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/vaibhav20060110" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://codeforces.com/profile/kaleshi_baddie1581" target="_blank">
+                <img src="images/codeforces.png" alt="Codeforces">
+            </a>
+        </div>
+    </div>
+</div>
+
+    <!-- 👥 MEMBERS -->
+    <div class="team-grid">
+        <div class="team-card blue-glow">
+            <img src="images/shubh.jpeg">
+            <h3>Shubham Kumar</h3>
+            <p>Roll No: 250104027</p>
+            <span>📊 PPT Maker </span>
+            <br>
+            <span>Javascript Developer</span>
+        </div>
+
+        <div class="team-card green-glow">
+            <img src="images/nikhil.jpeg">
+            <h3>Nikhil Sikarwar</h3>
+            <p>Roll No: 250101097</p>
+            <span>📚 Content Research</span>
+            <br>
+            <span> HTML Developer</span>
+        </div>
+
+        <div class="team-card pink-glow">
+            <img src="images/parvesh.jpeg">
+            
+            <h3>Parvesh Samaria</h3>
+            <p>Roll No: 250101102</p>
+            <span>🎨 CSS Designer</span>
+        </div>
+
+        <div class="team-card orange-glow">
+            <img src="images/rahul.jpeg">
+            <h3>Rahul verma</h3>
+            <p>Roll No: 250104019</p>
+            <span>🎤 Presenter</span>
+            <br>
+            <span> 🎨 CSS Designer</span>
+        </div>
+    </div>
+</section>
+
+<!-- JS ALWAYS LAST -->
+<script src="script.js"></script>
+
+</body>
+</html>
