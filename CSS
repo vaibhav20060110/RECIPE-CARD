@@ -1,0 +1,297 @@
+:root {
+    --primary: #ff4757;
+    --dark: #2d3436;
+    --light: #f8f9fa;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background-repeat: repeat;
+    background-size: 250px;
+    background-attachment: fixed;
+
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: transparent;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+}
+
+h1 span {
+    color: var(--primary);
+}
+
+/* ===== SEARCH ===== */
+.search-box input {
+    width: 80%;
+    max-width: 600px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    margin: 20px 0;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* ===== CATEGORY BUTTONS ===== */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: rgba(0,0,0,0.6);
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--primary);
+}
+
+/* ===== GRID ===== */
+#recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ===== RECIPE CARD ===== */
+.recipe-card {
+    background: whitesmoke;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* ===== IMAGE ===== */
+.image-wrapper {
+    position: relative;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* CATEGORY TAG */
+.category-tag {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: var(--primary);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* ===== CONTENT ===== */
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.content h2 {
+    color: black;
+}
+
+/* ===== INFO ===== */
+.info-section {
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.info-section h4 {
+    margin: 0 0 5px 0;
+    color: black;
+}
+
+.info-section p,
+.info-section li {
+    font-size: 0.85rem;
+    color: #333;
+}
+
+/* ===== BUTTON ===== */
+.yt-btn {
+    display: block;
+    margin-top: 20px;
+    background: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.yt-btn:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+/* ===== TEAM SECTION ===== */
+.team-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f8f9fa;
+    color: black;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* ===== TEAM CARD ===== */
+.team-card {
+    background: white;
+    color: black;
+    width: 240px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+}
+
+/* IMAGE */
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.team-card h3 {
+    margin: 10px 0 5px;
+}
+
+.team-card span {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* ===== LEADER ===== */
+.leader {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.leader-card {
+    transform: scale(1.1);
+    border: 2px solid var(--primary);
+}
+
+/* ===== TEAM GRID (LEFT-RIGHT BALANCE) ===== */
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* POSITION */
+.team-grid .team-card:nth-child(1) {
+    grid-column: 1;
+    justify-self: start;
+}
+
+.team-grid .team-card:nth-child(2) {
+    grid-column: 2;
+    justify-self: center;
+}
+
+.team-grid .team-card:nth-child(3) {
+    grid-column: 4;
+    justify-self: center;
+}
+
+.team-grid .team-card:nth-child(4) {
+    grid-column: 5;
+    justify-self: end;
+}
+/* ===== SOCIAL LINKS ===== */
+.social-links {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* ICON BASE */
+.social-links a {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;   /* square style like screenshot */
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+/* 🔵 LINKEDIN (always blue) */
+.social-links a:nth-child(1) {
+    background: #0077b5;
+    color: white;
+}
+
+/* ⚫ GITHUB */
+.social-links a:nth-child(2) {
+    background: #333;
+    color: white;
+}
+
+/* 🟡 CODEFORCES (multi color style feel) */
+.social-links a:nth-child(3) {
+    background: #1f8acb;
+    color: white;
+}
+
+/* HOVER */
+.social-links a:hover {
+    transform: translateY(-4px) scale(1.1);
+}
