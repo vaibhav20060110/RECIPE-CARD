@@ -434,7 +434,7 @@ const recipes = [
         id: 46, 
         title: "Hot Chocolate", 
         category: "Beverages", 
-        img: "images/chocolate.jpg", 
+        img: "images/hotChoco.png", 
         ing: ["Milk", "Cocoa Powder", "Dark Chocolate", "Sugar", "Vanilla Extract"], 
         steps: ["Whisk milk, cocoa, and sugar in a small pot", "Heat until simmering, then add dark chocolate pieces", "Stir until chocolate is completely melted", "Add vanilla and serve with marshmallows"], 
         yt: "https://youtu.be/kzBOTkQRp0A?si=aSHcwksk0lE0aEOd" 
@@ -486,7 +486,7 @@ function setBackground(category) {
     category = category.toLowerCase(); // 🔥 FIX
 
     if (category === "pizza") {
-        body.style.backgroundImage = "url('images/pizza.jpg')";
+        body.style.backgroundImage = "url('images/pizza85.jpeg')";
         body.style.backgroundRepeat = "repeat";
         body.style.backgroundSize = "250px";
     } 
