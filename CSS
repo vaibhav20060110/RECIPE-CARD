@@ -3,7 +3,48 @@
     --dark: #2d3436;
     --light: #f8f9fa;
 }
+/* ===== SEARCH BOX CLEAN ===== */
+.search-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+button:hover {
+    transform: scale(1.05);
+}
 
+.search-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+    pointer-events: none;
+}
+.section {
+    padding: 60px 10%;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+/* INPUT */
+.search-box input {
+    width: 85%;
+    max-width: 700px;
+
+    padding: 16px 20px 16px 50px; /* 🔥 important spacing */
+    border-radius: 40px;
+    border: none;
+
+    font-size: 1.1rem;
+    outline: none;
+}
 /* ===== BODY ===== */
 body {
     font-family: 'Poppins', sans-serif;
@@ -20,12 +61,16 @@ body {
 /* ===== HEADER ===== */
 header {
     background: transparent;
-    padding: 30px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
-h1 {
-    color: black;
+
+
+ h1 {
+    font-size: 3rem;     /* was small before */
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 h1 span {
@@ -33,16 +78,16 @@ h1 span {
 }
 
 /* ===== SEARCH ===== */
-.search-box input {
+/* .search-box input {
     width: 80%;
-    max-width: 600px;
-    padding: 12px 25px;
-    border-radius: 30px;
+    max-width: 700px;
+    padding: 18px 30px;
+    border-radius: 40px;
     border: none;
     margin: 20px 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
     outline: none;
-}
+} */
 
 /* ===== CATEGORY BUTTONS ===== */
 .categories {
@@ -53,20 +98,27 @@ h1 span {
 }
 
 .filter-btn {
-    background: rgba(0,0,0,0.6);
+    background: white;
+    color: #333;
+
+    padding: 12px 22px;
+    border-radius: 25px;
+
     border: none;
-    padding: 8px 18px;
-    border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: var(--primary);
     color: white;
 }
-
-.filter-btn.active,
-.filter-btn:hover {
-    background: var(--primary);
-}
-
 /* ===== GRID ===== */
 #recipe-grid {
     display: grid;
@@ -105,6 +157,7 @@ h1 span {
 
 /* CATEGORY TAG */
 .category-tag {
+
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -115,7 +168,19 @@ h1 span {
     font-size: 0.75rem;
     font-weight: 600;
 }
-
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+* {
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
 /* ===== CONTENT ===== */
 .content {
     padding: 20px;
@@ -167,8 +232,8 @@ h1 span {
 .team-section {
     padding: 60px 20px;
     text-align: center;
-    background: #f8f9fa;
-    color: black;
+    background: #0a254e;   /* 🔥 dark blue */
+    color: white;
 }
 
 .team-section h2 {
@@ -186,7 +251,10 @@ h1 span {
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     transition: 0.3s;
 }
-
+/* .team-card {
+    background: white;
+    color: black;
+} */
 .team-card:hover {
     transform: translateY(-6px);
 }
@@ -198,6 +266,14 @@ h1 span {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
+}
+.categories {
+    margin-top: 20px;
+    gap: 14px;
+}
+
+header {
+    padding: 70px 20px 50px;
 }
 
 /* TEXT */
@@ -250,15 +326,14 @@ h1 span {
     grid-column: 5;
     justify-self: end;
 }
-/* ===== SOCIAL LINKS ===== */
-.social-links {
-    margin-top: 12px;
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-}
 
-/* ICON BASE */
+
+
+
+
+
+
+/* NORMAL ICON BUTTONS */
 .social-links a {
     width: 36px;
     height: 36px;
@@ -267,31 +342,190 @@ h1 span {
     align-items: center;
     justify-content: center;
 
-    border-radius: 8px;   /* square style like screenshot */
-    font-size: 18px;
+    border-radius: 8px;
+    background: #f1f1f1;
+}
 
+
+/* 🔥 CODEFORCES SPECIAL (NO BOX) */
+.cf-link {
+    background: none !important;
+    width: 35px;
+    height: 35px;
+}
+
+
+
+
+/* ===== FINAL SOCIAL LINKS (CLEAN) ===== */
+.social-links {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+/* DEFAULT ICON BOX */
+.social-links a {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
     transition: 0.3s;
 }
 
-/* 🔵 LINKEDIN (always blue) */
+/* ICON SIZE */
+.social-links i {
+    font-size: 18px;
+}
+
+/* LINKEDIN */
 .social-links a:nth-child(1) {
     background: #0077b5;
     color: white;
 }
 
-/* ⚫ GITHUB */
+/* GITHUB */
 .social-links a:nth-child(2) {
     background: #333;
     color: white;
 }
 
-/* 🟡 CODEFORCES (multi color style feel) */
-.social-links a:nth-child(3) {
-    background: #1f8acb;
-    color: white;
+/* 🔥 CODEFORCES FIX */
+.social-links a.cf-link {
+    background: none !important;
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+
+.social-links a.cf-link img {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* HOVER */
 .social-links a:hover {
-    transform: translateY(-4px) scale(1.1);
+    transform: translateY(-4px) scale(1.08);
+}
+
+/* 🔥 FIX ALL LOGO ICONS (CF, LC, CC) */
+.social-links a img {
+    width: 50px !important;
+    height: 500px !important;
+    object-fit: contain;
+}
+
+🔥 REMOVE BIG SIZE FROM CC */
+.cc-link img {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+/* 🔥 KEEP BUTTON SIZE SAME */
+.social-links a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.search-icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: #555;   /* darker */
+    font-size: 18px;
+    opacity: 0.9;
+}
+.search-box input {
+    background: white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+
+    padding: 16px 20px 16px 50px;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.6);
+    z-index: -1;
+}
+
+header {
+    position: relative;
+}
+
+/* 🔥 FIX IMAGE ICON ALIGNMENT */
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* PERFECT CENTERING FOR IMAGE ICONS */
+.social-links a img {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: contain;
+
+    position: relative;
+    top: 3px;   /* 🔥 slight downward adjustment */
+}
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-links a {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10%;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+}
+.social-icons img {
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.15) rotate(5deg);
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 5%;
+    }
+
+    .social-icons img {
+        width: 35px;
+    }
+}
+.section {
+    margin-bottom: 40px;
+}
+* {
+    transition: all 0.2s ease-in-out;
+}
+button, a, img {
+    cursor: pointer;
 }
