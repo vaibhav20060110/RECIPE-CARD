@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>food recipes</title>
-    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <!-- HEADER -->
+ <!-- HEADER -->
     <header>
         <h1>DishDash <span>Recipes</span></h1>
 
@@ -28,7 +25,6 @@
         onkeyup="searchRecipes()"
     >
 </div>
-<!-- <i class="fas fa-search"></i> -->
         <!-- CATEGORY BUTTONS -->
         <nav class="categories">
             <button class="filter-btn active" data-category="All">All</button>
@@ -51,7 +47,7 @@
     <!-- 👑 LEADER -->
     <div class="leader">
         <div class="team-card leader-card">
-            <img src="images/vaibhav.jpg" alt="Vaibhav Rawat">
+            <img src="images/vaibhav.jpg" >
             <h3>Vaibhav Rawat</h3>
             <p>Roll No: 250101160</p>
 
@@ -87,7 +83,7 @@
     <div class="team-grid">
 
         <div class="team-card blue-glow">
-            <img src="images/shubh.jpeg">
+            <img src="images/shubh.jpeg" alt="Vaibhav Rawat">
             <h3>Shubham Kumar</h3>
             <b> Co-Leader</b>
             <p>Roll No: 250104027</p>
@@ -118,7 +114,19 @@
 
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/nikhil-sikarwar-360996381?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="cc-link"><img src="images/cc2.png"></a>
+                
+            </div>
+        </div>
+        <div class="team-card orange-glow">
+            <img src="images/rahul.jpeg">
+            <h3>Rahul Verma</h3><br>
+            <p>Roll No: 250104019</p>
+            <span>🎤 Presenter</span><br>
+            <span>🎨 CSS Designer</span>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/rahul-kumar-16a2aa382?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <!-- <a href="#" class="cc-link"><img src="images/cc2.png"></a> -->
             </div>
         </div>
 
@@ -134,22 +142,7 @@
                 <a href="https://www.linkedin.com/in/parvesh-samria-125b213ab" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <!-- <a href="#" class="cc-link">
-                    <img src="images/cc2.png"> -->
                 </a>
-            </div>
-        </div>
-
-        <div class="team-card orange-glow">
-            <img src="images/rahul.jpeg">
-            <h3>Rahul Verma</h3><br>
-            <p>Roll No: 250104019</p>
-            <span>🎤 Presenter</span><br>
-            <span>🎨 CSS Designer</span>
-
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/rahul-kumar-16a2aa382?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <!-- <a href="#" class="cc-link"><img src="images/cc2.png"></a> -->
             </div>
         </div>
 
