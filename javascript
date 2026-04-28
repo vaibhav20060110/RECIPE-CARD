@@ -1,8 +1,4 @@
 const recipes = [
-    // --- PIZZA (10 Items) ---
-    // { id: 1, title: "Margherita Pizza", category: "Pizza", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpWOkeCCgMKCQygnqFhp14LyKDUHabnoh-1w&s", ing: ["Pizza Dough", "Tomato Sauce", "Mozzarella Cheese", "Fresh Basil", "Olive Oil", "Salt"], steps: ["Roll the dough into a circle", "Spread tomato sauce evenly", "Top with cheese and basil", "Bake at 450°F for 12 mins"], yt: "https://youtu.be/vcfNpDtVqOw?si=DFuHZrICNZAuznQj" },
-    // { id: 2, title: "Farmhouse Pizza", category: "Pizza", img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400", ing: ["Capsicum", "Onion", "Mushroom", "Corn", "Cheese"], steps: ["Prep veggies", "Add sauce and toppings", "Bake until golden"], yt: "https://youtu.be/cw9Hmol-N9s?si=Z9mVupxnFlorf8D8" },
-    // // Add 8 more Pizza objects here...
     // --- PIZZA CATEGORY (10 ITEMS) ---
     { 
         id: 1, 
@@ -69,7 +65,7 @@ const recipes = [
     },
     { 
         id: 8, 
-        title: "Corn n Cheese Pizza", 
+        title: "Corn & Cheese Pizza", 
         category: "Pizza", 
         img: "https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=400", 
         ing: ["Sweet Corn", "Extra Mozzarella", "Garlic Butter", "Mixed Herbs"], 
@@ -95,10 +91,7 @@ const recipes = [
         yt: "https://youtu.be/TH_EM2-eDY0?si=Ri-2xiGNGdc913zv" 
     },
 
-    // --- BURGERS (10 Items) ---
-    // { id: 11, title: "Aloo Tikki Burger", category: "Burger", img: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=400", ing: ["Burger Bun", "Potato Patty", "Lettuce", "Tomato Slice", "Mayo"], steps: ["Toast the buns", "Deep fry the potato patty", "Assemble with sauce and veg"], yt: "https://youtu.be/L6yX6OAK_V0" },
-    // { id: 12, title: "Crispy Paneer Burger", category: "Burger", img: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400", ing: ["Paneer Block", "Breadcrumbs", "Spicy Mayo", "Bun"], steps: ["Coat paneer in batter", "Fry until crispy", "Stack in bun"], yt: "https://youtu.be/u_Yv_h1f5pM" },
-    // Add 8 more Burger objects here...
+   
     // --- BURGER CATEGORY (10 ITEMS) ---
     { 
         id: 11, 
